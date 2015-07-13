@@ -7,4 +7,7 @@ router.get('/', function(req, res) {
 });
 router.get('/quizes/question',quizController.question);
 router.get('/quizes/answer',quizController.answer);
+router.get('/author', function(req, res) {
+res.render('creditos');// llamamos a renderizar creditos.ejs sin parámetros
+});
 module.exports = router;
