@@ -8,9 +8,9 @@
 3 info using node@v0.12.4
 4 verbose install initial load of C:\mis_proyectos\quiz\package.json
 5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token '}' at 12:40
-5 verbose stack   "devDependencies": {"sqlite3: ^3.0.9"},
-5 verbose stack                                        ^
+5 verbose stack Trailing comma in object at 27:3
+5 verbose stack   }
+5 verbose stack   ^
 5 verbose stack     at parseError (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
 5 verbose stack     at parseJson (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
 5 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
@@ -25,9 +25,9 @@
 11 error file C:\mis_proyectos\quiz\package.json
 12 error code EJSONPARSE
 13 error Failed to parse json
-13 error Unexpected token '}' at 12:40
-13 error   "devDependencies": {"sqlite3: ^3.0.9"},
-13 error                                        ^
+13 error Trailing comma in object at 27:3
+13 error   }
+13 error   ^
 14 error File: C:\mis_proyectos\quiz\package.json
 15 error Failed to parse package.json data.
 15 error package.json must be actual JSON, not just JavaScript.
