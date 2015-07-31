@@ -65,4 +65,4 @@ var quiz = models.Quiz.build( req.body.quiz );
  quiz.save({fields: ["pregunta", "respuesta"]}).then(function(){
  res.redirect('/quizes');
  })   // res.redirect: Redirección HTTP a lista de preguntas
-};  
+};
