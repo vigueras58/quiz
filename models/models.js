@@ -30,13 +30,13 @@ var sequelize = new Sequelize(DB_name, user, pwd,
  sequelize.sync().then(function() {
     Quiz.count().then(function (count){
       if (count === 0) {
- Quiz.create({pregunta: 'Capital de Italia',respuesta: 'Roma'})
+ Quiz.create({pregunta: 'Capital de Italia',respuesta: 'Roma',tema:'Humanidades'})
  Quiz.create({pregunta: 'Capital de Portugal',
-respuesta: 'Lisboa'})
+respuesta: 'Lisboa', tema:'Humanidades'})
  Quiz.create({pregunta: 'Capital de Francia',
- respuesta: 'Paris'})
+ respuesta: 'Paris',tema:'Humanidades' })
 Quiz.create({pregunta: 'Capital de España',
-respuesta: 'Madrid'})  
+respuesta: 'Madrid',tema:'Humanidades'})  
 
 .then(function(){console.log('Base de datos inicializada')});
 };
